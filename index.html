@@ -171,18 +171,19 @@
     .btn-light{background:var(--cream);color:var(--rose)}.btn-light:hover{background:var(--white);color:var(--rose)}
 
     /* NAV */
-    #navbar{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:1.4rem 0;background:var(--rose);transition:background .4s,padding .4s,box-shadow .4s}
-    #navbar.scrolled{background:var(--rose);padding:.85rem 0;box-shadow:0 4px 28px rgba(107,58,77,.25)}
+    #navbar{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:.85rem 0;background:var(--rose);transition:background .4s,padding .4s,box-shadow .4s}
+    #navbar.scrolled{background:var(--rose);padding:.6rem 0;box-shadow:0 4px 28px rgba(107,58,77,.25)}
     .nav-inner{display:flex;align-items:center;justify-content:space-between}
     .nav-logo{display:flex;align-items:center;text-decoration:none;transition:opacity .3s;flex-shrink:0}
     .nav-logo:hover{opacity:.85}
-    .nav-logo-img{height:44px;width:auto;display:block;object-fit:contain}
-    .nav-logo-placeholder{height:44px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.1);border:1.5px dashed rgba(255,255,255,.3);padding:0 1rem;gap:.65rem;min-width:148px;border-radius:2px}
+    .nav-logo-img{height:68px;width:auto;display:block;object-fit:contain;transition:height .4s ease}
+    .nav-logo-placeholder{height:68px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.1);border:1.5px dashed rgba(255,255,255,.3);padding:0 1rem;gap:.65rem;min-width:148px;border-radius:2px}
     .nav-logo-placeholder-icon{width:26px;height:26px;border-radius:50%;background:rgba(200,169,122,.2);border:1px solid rgba(200,169,122,.55);display:flex;align-items:center;justify-content:center;flex-shrink:0}
     .nav-logo-placeholder-txt{font-family:var(--sans);font-size:.6rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.45);line-height:1.35}
-    .nav-links{display:flex;align-items:center;gap:2.2rem;list-style:none}
-    .nav-links a{font-size:.7rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.85);text-decoration:none;transition:color .3s}
+    .nav-links{display:flex;align-items:center;gap:1.5rem;list-style:none}
+    .nav-links a{font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85);text-decoration:none;transition:color .3s}
     #navbar.scrolled .nav-links a{color:rgba(255,255,255,.85)}
+    #navbar.scrolled .nav-logo-img{height:56px}
     .nav-links a:hover{color:var(--gold)!important}
     .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
     .hamburger span{width:24px;height:1.5px;background:rgba(255,255,255,.9);transition:all .3s;display:block}
